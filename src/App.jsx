@@ -1,12 +1,21 @@
 import React from 'react'
+import Hero from './section/Hero'
+import ShowcasesSection from './section/ShowcasesSection'
+import NavBar from './component/NavBar'
+import LogoSection from './component/LogoSection'
+import FeatureCards from './section/FeatureCard'
+import ExperianceSection from './section/ExperianceSection'
 
 const App = () => {
   return (
-    <main>
-      <div>
-        <h1>welcom to 3d </h1>
-      </div>
-    </main>
+    <>
+      <NavBar />
+      <Hero />
+      <ShowcasesSection />
+      <LogoSection />
+      <FeatureCards />
+      <ExperianceSection />
+    </>
   )
 }
 
