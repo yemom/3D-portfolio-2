@@ -204,45 +204,45 @@ const expLogos = [
 
 const testimonials = [
     {
-        name: "Esther Howard",
-        mentions: "@estherhoward",
+        name: "Daniel Anteneh",
+        mentions: "@danielanteneh",
         review:
-            "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website. His problem-solving abilities are outstanding.",
+            "I can’t say enough good things about Esrom. He took our complex mobile app requirements and transformed them into a seamless, beautifully designed, and highly functional Flutter application. His attention to detail, understanding of UI/UX, and problem-solving skills are truly outstanding. Esrom consistently delivers beyond expectations.",
         imgPath: "/images/client1.png",
     },
     {
-        name: "Wade Warren",
-        mentions: "@wadewarren",
+        name: "Muhamed Ibrahim",
+        mentions: "@muhamedibrahim",
         review:
-            "Working with Adrian was a fantastic experience. He transformed our outdated website into a modern, user-friendly platform. His attention to detail and commitment to quality are unmatched. Highly recommend him for any web dev projects.",
+            "Esrom brought new life to our platform. He revamped our outdated interface into a smooth, modern application with a great user experience. His sharp eye for design, clean coding practices, and dedication to delivering top-quality work make him stand out. Highly recommended!",
         imgPath: "/images/client3.png",
     },
     {
-        name: "Guy Hawkins",
-        mentions: "@guyhawkins",
+        name: "Alazar Tadesse",
+        mentions: "@alazartadesse",
         review:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
+            "Collaborating with Esrom was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results shone through every step of our project. Esrom’s enthusiasm for all aspects of development truly sets him apart. If you want to elevate your app and boost your brand, Esrom is the ideal partner to make it happen",
         imgPath: "/images/client2.png",
     },
     {
-        name: "Marvin McKinney",
-        mentions: "@marvinmckinney",
+        name: "Yohanes Seyum",
+        mentions: "@johnhirko",
         review:
-            "Adrian was a pleasure to work with. He turned our outdated website into a fresh, intuitive platform that’s both modern and easy to navigate. Fantastic work overall.",
+            "Esrom was a pleasure to work with. He transformed our outdated app into a fresh, intuitive platform that’s modern and super easy to use. Fantastic work all around.",
         imgPath: "/images/client5.png",
     },
     {
-        name: "Floyd Miles",
-        mentions: "@floydmiles",
+        name: "Bereket Tadesse",
+        mentions: "@berekettadesse",
         review:
-            "Adrian’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce site, and our online sales have significantly increased since the launch. He’s a true professional!",
+            "Esrom’s expertise in web development is truly impressive. He delivered a robust and scalable solution for our e-commerce platform, and since launch, our online sales have seen a significant boost. He’s a true professional!",
         imgPath: "/images/client4.png",
     },
     {
-        name: "Albert Flores",
+        name: "Nahom Basazinaw",
         mentions: "@albertflores",
         review:
-            "Adrian was a pleasure to work with. He understood our requirements perfectly and delivered a website that exceeded our expectations. His skills in both frontend and backend dev are top-notch.",
+            "Esrom was a pleasure to work with. He nailed our requirements perfectly and delivered an app that blew past our expectations. His skills on both frontend and backend are seriously top-notch.",
         imgPath: "/images/client6.png",
     },
 ];
