@@ -251,18 +251,22 @@ const socialImgs = [
     {
         name: "insta",
         imgPath: "/images/insta.png",
+        link: "https://instagram.com/12yemom"
     },
     {
         name: "fb",
-        imgPath: "/images/fb.png",
+        imgPath: "/images/telegram.webp",
+        link: "https://t.me/@yemom21"
     },
     {
         name: "x",
-        imgPath: "/images/x.png",
+        imgPath: "/images/github.png",
+        link: "https://github.com/yemom"
     },
     {
         name: "linkedin",
         imgPath: "/images/linkedin.png",
+        link: "https://www.linkedin.com/in/esrom-basazinew-65102a339"
     },
 ];
 
