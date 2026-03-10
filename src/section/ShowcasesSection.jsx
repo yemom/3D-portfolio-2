@@ -9,6 +9,7 @@ const ShowcasesSection = () => {
     const sectionRef = useRef(null);
     const rydeRef = useRef(null);
     const libraryRef = useRef(null);
+    const chatAppRef = useRef(null);
     const ycDirectoryRef = useRef(null);
 
     useGSAP(() => {
@@ -20,7 +21,7 @@ const ShowcasesSection = () => {
         );
 
         // Animations for each app showcase
-        const cards = [rydeRef.current, libraryRef.current, ycDirectoryRef.current];
+        const cards = [rydeRef.current, libraryRef.current, chatAppRef.current, ycDirectoryRef.current];
 
         cards.forEach((card, index) => {
             gsap.fromTo(
@@ -47,49 +48,81 @@ const ShowcasesSection = () => {
         <div id="work" ref={sectionRef} className="app-showcase">
             <div className="w-full">
                 <div className="showcaselayout">
-                    <div ref={rydeRef} className="first-project-wrapper">
-                        <div className="image-wrapper">
-                            <a href="https://github.com/yemom/AAiT_School_project_mobileapp_exam_app">
-
-                                <img src="/images/project1.jpg" alt="Exam App Interface" />
+                    <div className="project first-project-wrapper" ref={chatAppRef}>
+                        <div className="image-wrapper bg-[#E0F7FA]">
+                            <a href="https://github.com/yemom/flutter_real_time_chat_app" className="block w-full h-full cursor-pointer">
+                                <div className="flex justify-center items-center gap-2 md:gap-4 h-full w-full p-2 md:p-6">
+                                    <img
+                                        style={{ width: "30%" }}
+                                        src="/images/Project-1.png"
+                                        alt="Real Time Chat App Interface"
+                                        className="object-contain drop-shadow-xl hover:-translate-y-2 transition-transform duration-300"
+                                    />
+                                    <img
+                                        style={{ width: "30%" }}
+                                        src="images/Project-1.1.png"
+                                        alt="Real Time Chat App Interface"
+                                        className="object-contain drop-shadow-xl hover:-translate-y-2 transition-transform duration-300"
+                                    />
+                                    <img
+                                        style={{ width: "30%" }}
+                                        src="/images/Project-1.2.png"
+                                        alt="Real Time Chat App Interface"
+                                        className="object-contain drop-shadow-xl hover:-translate-y-2 transition-transform duration-300"
+                                    />
+                                </div>
                             </a>
                         </div>
                         <div className="text-content">
-                            <h2>
-                                On-Demand Rides Made Simple with a Powerful, User-Friendly App
-                                called Exam App
-                            </h2>
-                            <h4>
-                                A mobile-based exam application built using Flutter, designed for academic use at AAiT. This project simulates real exam experiences with clean UI, timed quizzes, and question handling – ideal for student assessments and testing systems.
-                            </h4>
+                            <h2>Real Time Chat App</h2>
+                            <h4>Real‑Time Chat App is a fully functional mobile chat application developed using Flutter and Firebase. The app leverages Firebase Authentication for secure user sign‑in/sign‑up, Cloud Firestore for real‑time message synchronization, and intuitive UI screens that deliver smooth user experiences on both Android and iOS devices.</h4>
                         </div>
                     </div>
 
                     <div className="project-list-wrapper overflow-hidden">
                         <div className="project" ref={libraryRef}>
                             <div className="image-wrapper bg-[#FFEFDB]">
-                                <a href="https://github.com/yemom/mobile_user_page">
-
-                                    <img
-                                        src="/images/project2.jpg"
-                                        alt="NeuroParent App Interface"
-                                    />
+                                <a href="https://github.com/yemom/fre-selama-mezmur-debter" className="block w-full h-full cursor-pointer">
+                                    <div className="flex justify-center items-center gap-2 md:gap-4 h-full w-full p-2 md:p-6">
+                                        <img
+                                            style={{ width: "30%" }}
+                                            src="/images/Project-4.png"
+                                            alt="Fre Selama Mezmur Debter Interface"
+                                            className="object-contain drop-shadow-xl hover:-translate-y-2 transition-transform duration-300"
+                                        />
+                                        <img
+                                            style={{ width: "30%" }}
+                                            src="/images/Project-4.1.png"
+                                            alt="Fre Selama Mezmur Debter Interface"
+                                            className="object-contain drop-shadow-xl hover:-translate-y-2 transition-transform duration-300"
+                                        />
+                                        <img
+                                            style={{ width: "30%" }}
+                                            src="/images/Project_4.2.png"
+                                            alt="Fre Selama Mezmur Debter Interface"
+                                            className="object-contain drop-shadow-xl hover:-translate-y-2 transition-transform duration-300"
+                                        />
+                                    </div>
                                 </a>
                             </div>
-                            <h2>The NeuroParent Mobile App</h2>
-                            <h4>Flutter application that connects parents with mental health professionals, offering parenting tips, event listings, and community features. Built with Flutter and Dart, it provides a seamless user experience across platforms.</h4>
-
+                            <div className="text-content">
+                                <h2>Fre Selama Mezmur Debter</h2>
+                                <h4>Fre Selama Mezmur Debter is a mobile application designed to provide Ethiopian Christian worship songs and mezmur lyrics in a digital format. The application allows users to easily browse, search, and read mezmur lyrics from a structured collection of Ethiopian spiritual songs.</h4>
+                            </div>
                         </div>
+
+
 
                         <div className="project" ref={ycDirectoryRef}>
                             <div className="image-wrapper bg-[#FFE7EB]">
-                                <a href="https://github.com/yemom/Blog-Web-App">
-
-                                    <img src="/images/project3.jpg" alt="Blog Web App Interface" />
+                                <a href="https://github.com/yemom/show-case-architects">
+                                    <img src="/images/Project-3.png" alt="Showcase Architects Interface" />
                                 </a>
                             </div>
-                            <h2>Blog Web App</h2>
-                            <h4>A full-stack blog application built with Node.js, Express.js, MongoDB, and EJS templating engine. This project allows users to 🛠️ create, 📖 read, and 🗑️ manage blog posts in a clean, responsive web interface.</h4>
+                            <div className="text-content">
+                                <h2>Showcase Architects</h2>
+                                <h4>Show-Case Architects is a responsive web application that presents architectural designs and creative projects through a clean portfolio-style interface. The project demonstrates modern frontend development, responsive UI design, and structured project organization using GitHub.</h4>
+                            </div>
                         </div>
                     </div>
                 </div>

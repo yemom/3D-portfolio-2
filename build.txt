@@ -1,0 +1,94 @@
+﻿[36mvite v7.3.1 [32mbuilding client environment for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 4 modules transformed.
+node.exe : 
+[31mΓ£ù[39m Build 
+failed in 87ms
+At C:\Program Files\nod
+ejs\npx.ps1:29 char:3
++   & $NODE_EXE 
+$NPX_CLI_JS $args
++   ~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: ([31mΓ£ù[39m   
+  Build failed in 8    
+7ms:String) [], Re    
+moteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+[31merror during 
+build:
+[31m[@tailwindcss/vite
+:generate:build] 
+Cannot apply unknown 
+utility class 
+`group`[31m
+file: [36mD:/AAiT 
+PROJECTS/web 
+project/3D portfolio/sr
+c/index.css[31m
+    at 
+onInvalidCandidate (fil
+e:///D:/AAiT%20PROJECTS
+/web%20project/3D%20por
+tfolio/node_modules/tai
+lwindcss/dist/chunk-4WX
+WQT6Y.mjs:18:1509)
+    at pe (file:///D:/A
+AiT%20PROJECTS/web%20pr
+oject/3D%20portfolio/no
+de_modules/tailwindcss/
+dist/chunk-4WXWQT6Y.mjs
+:13:29503)
+    at file:///D:/AAiT%
+20PROJECTS/web%20projec
+t/3D%20portfolio/node_m
+odules/tailwindcss/dist
+/chunk-4WXWQT6Y.mjs:18:
+373
+    at F (file:///D:/AA
+iT%20PROJECTS/web%20pro
+ject/3D%20portfolio/nod
+e_modules/tailwindcss/d
+ist/chunk-4WXWQT6Y.mjs:
+3:1656)
+    at F (file:///D:/AA
+iT%20PROJECTS/web%20pro
+ject/3D%20portfolio/nod
+e_modules/tailwindcss/d
+ist/chunk-4WXWQT6Y.mjs:
+3:1939)
+    at Oe (file:///D:/A
+AiT%20PROJECTS/web%20pr
+oject/3D%20portfolio/no
+de_modules/tailwindcss/
+dist/chunk-4WXWQT6Y.mjs
+:18:172)
+    at ti (file:///D:/A
+AiT%20PROJECTS/web%20pr
+oject/3D%20portfolio/no
+de_modules/tailwindcss/
+dist/chunk-4WXWQT6Y.mjs
+:35:780)
+    at async mn (file:/
+//D:/AAiT%20PROJECTS/we
+b%20project/3D%20portfo
+lio/node_modules/tailwi
+ndcss/dist/chunk-4WXWQT
+6Y.mjs:35:1123)
+    at async Ca (file:/
+//D:/AAiT%20PROJECTS/we
+b%20project/3D%20portfo
+lio/node_modules/tailwi
+ndcss/dist/chunk-4WXWQT
+6Y.mjs:35:1898)
+    at async $a (file:/
+//D:/AAiT%20PROJECTS/we
+b%20project/3D%20portfo
+lio/node_modules/@tailw
+indcss/node/dist/index.
+mjs:10:3433)[39m
