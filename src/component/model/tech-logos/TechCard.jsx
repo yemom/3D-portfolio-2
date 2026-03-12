@@ -16,7 +16,7 @@ const TechCard = ({ model }) => {
                 }
             });
         }
-    }, [scene]);
+    }, [scene, model.name]);
 
     return (
         <Canvas>

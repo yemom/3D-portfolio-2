@@ -38,15 +38,21 @@ const Contact = () => {
             return;
         }
 
-        const SERVICE_ID = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID || "service_1h9yo34";
-        const TEMPLATE_ID = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID || "template_3zk488d";
+        const SERVICE_ID = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+        const TEMPLATE_ID = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
         const PUBLIC_KEY = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
+
+        if (!SERVICE_ID || !TEMPLATE_ID) {
+            toast.error("Email service is not configured yet. Please try again later.");
+            setLoading(false);
+            return;
+        }
 
         const templateParams = {
             from_name: form.name,
             from_email: form.email,
             reply_to: form.email,
-            subject: form.subject || "New Contact Message",
+            subject: "New Contact Message",
             message: form.message,
             to_name: "Esrom",
             to_email: "12yemom@gmail.com",
@@ -59,7 +65,7 @@ const Contact = () => {
 
             await sendPromise;
             toast.success("Message sent successfully. We'll reply soon.");
-            setForm({ name: "", email: "", subject: "", message: "" });
+            setForm({ name: "", email: "", message: "" });
         } catch (error) {
             console.error("EmailJS send error:", error);
             const detail = error?.text || error?.message || "Unknown error";

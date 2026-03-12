@@ -48,7 +48,7 @@ const ShowcasesSection = () => {
         <div id="work" ref={sectionRef} className="app-showcase">
             <div className="w-full">
                 <div className="showcaselayout">
-                    <div className="project first-project-wrapper" ref={chatAppRef}>
+                    <div className="project group first-project-wrapper" ref={chatAppRef}>
                         <div className="image-wrapper bg-[#E0F7FA]">
                             <a href="https://github.com/yemom/flutter_real_time_chat_app" className="block w-full h-full cursor-pointer">
                                 <div className="flex justify-center items-center gap-2 md:gap-4 h-full w-full p-2 md:p-6">
@@ -80,7 +80,7 @@ const ShowcasesSection = () => {
                     </div>
 
                     <div className="project-list-wrapper overflow-hidden">
-                        <div className="project" ref={libraryRef}>
+                        <div className="project group" ref={libraryRef}>
                             <div className="image-wrapper bg-[#FFEFDB]">
                                 <a href="https://github.com/yemom/fre-selama-mezmur-debter" className="block w-full h-full cursor-pointer">
                                     <div className="flex justify-center items-center gap-2 md:gap-4 h-full w-full p-2 md:p-6">
@@ -113,7 +113,7 @@ const ShowcasesSection = () => {
 
 
 
-                        <div className="project" ref={ycDirectoryRef}>
+                        <div className="project group" ref={ycDirectoryRef}>
                             <div className="image-wrapper bg-[#FFE7EB]">
                                 <a href="https://github.com/yemom/show-case-architects">
                                     <img src="/images/Project-3.png" alt="Showcase Architects Interface" />

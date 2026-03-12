@@ -14,6 +14,7 @@ const Footer = () => {
                             href={item.link}
                             target="_blank"
                             rel="noopener noreferrer"
+                            aria-label={`Open ${item.name} profile`}
                         >
                             <img
                                 src={item.imgPath}

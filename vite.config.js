@@ -5,4 +5,19 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  test: {
+    environment: 'jsdom',
+    setupFiles: './src/test/setup.js',
+    css: true,
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          three: ['three', '@react-three/fiber', '@react-three/drei', '@react-three/postprocessing'],
+          animation: ['gsap', '@gsap/react'],
+        },
+      },
+    },
+  },
 })

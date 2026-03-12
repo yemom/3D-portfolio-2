@@ -165,7 +165,7 @@ section {
     }
 
     .project {
-      @apply flex flex-col group w-full;
+      @apply flex flex-col w-full;
     }
 
     .text-content {

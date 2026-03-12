@@ -1,99 +1,64 @@
-# 💼 Esrom Basazinaw — 3D Developer Portfolio
+# 3D Portfolio
 
-[![Portfolio Preview](https://github.com/yemom/3D-portfolio-2/blob/main/public/thumbnail.png)](https://yemom.github.io/3D-portfolio-2/)  
-> 🚀 A modern 3D portfolio website built with React, Three.js (react-three-fiber), Tailwind CSS, and Framer Motion. Fully responsive and animation-rich — perfect for developers and designers who want to stand out.
+A personal portfolio web app built with React, Vite, Tailwind CSS v4, GSAP, and React Three Fiber.
 
----
+## Tech Stack
 
-## 🔗 Live Demo
+- React 19
+- Vite 7
+- Tailwind CSS 4 (`@tailwindcss/vite`)
+- Three.js with `@react-three/fiber` and `@react-three/drei`
+- GSAP
+- EmailJS for the contact form
 
-🌐 [View Portfolio](https://yemom.github.io/3D-portfolio-2/)
-
----
-
-## 📸 Screenshots
-
-| Home Page | Projects | Contact |
-|----------|----------|---------|
-| ![Home](public/screenshots/home.png) | ![Projects](public/screenshots/projects.png) | ![Contact](public/screenshots/contact.png) |
-
----
-
-## 🔧 Features
-
-- 🌐 **Responsive Design** – Looks great on mobile, tablet, and desktop.
-- 🧠 **3D Animations** – Powered by Three.js (via `@react-three/fiber`).
-- ⚡ **Framer Motion** – Smooth transitions and UI animations.
-- 🎨 **Tailwind CSS** – Utility-first styling for fast and clean layouts.
-- 🧩 **Modular Components** – Reusable and maintainable React structure.
-- 📬 **Functional Contact Form** – Sends email via [EmailJS](https://www.emailjs.com/).
-
----
-
-## 🛠️ Tech Stack
-
-| Frontend     | 3D & Animation     | Styling        | Tools         |
-|--------------|--------------------|----------------|----------------|
-| React.js     | Three.js           | Tailwind CSS   | Vite           |
-| React Router | @react-three/fiber | Framer Motion  | EmailJS        |
-
----
-
-## 🚀 Getting Started
-
-To run this project locally:
+## Local Development
 
 ```bash
-# 1. Clone the repo
-git clone https://github.com/yemom/3D-portfolio-2.git
-
-# 2. Navigate into the folder
-cd 3D-portfolio-2
-
-# 3. Install dependencies
 npm install
-
-# 4. Start the development server
 npm run dev
+```
 
-.
-├── public/
-├── src/
-│   ├── assets/            # Images, models, icons
-│   ├── components/        # All reusable UI components
-│   ├── constants/         # Static data (skills, projects, nav)
-│   ├── pages/             # Page components (Home, Contact)
-│   ├── styles/            # Tailwind and global styles
-│   ├── utils/             # Utility functions
-│   └── App.jsx
-├── .env.example           # Sample for environment variables
-├── vite.config.js
+## Quality Checks
 
+```bash
+npm run lint
+npm run test
+npm run build
+npm run check
+```
 
-📬 Contact
-Feel free to reach out for collaborations or job opportunities!
+`npm run check` runs lint + production build.
+Use `npm run test:watch` during local development.
 
-📧 Email: 12yemom@gmail.com
+## Environment Variables
 
-💼 LinkedIn: Esrom Basazinaw
+Create a `.env` file in the project root using `.env.example`:
 
-🐙 GitHub: @yemom
+```bash
+cp .env.example .env
+```
 
+Required variables:
 
+- `VITE_APP_EMAILJS_SERVICE_ID`
+- `VITE_APP_EMAILJS_TEMPLATE_ID`
+- `VITE_APP_EMAILJS_PUBLIC_KEY`
 
-📄 License
-This project is open-source under the MIT License.
+## Deployment
 
-⭐️ Acknowledgments
-Inspired by JavaScript Mastery 3D Portfolio Project.
+This is a static Vite app, so you can deploy the `dist/` output to Vercel, Netlify, Cloudflare Pages, or GitHub Pages.
 
-Special thanks to @adrianhajdin for his tutorials.
+### Generic deploy flow
 
+```bash
+npm ci
+npm run check
+npm run build
+```
 
----
+Publish the generated `dist/` folder.
 
-Would you like me to:
-- Add this directly into your repo as a `README.md` file?
-- Or generate a badge-rich version (with GitHub stars, forks, and status icons)?
+## Notes
 
-Let me know big bro style 😎🔥
+- Keep `.env` out of version control. `.gitignore` already excludes it.
+- If contact form env vars are missing, the UI now fails gracefully with a message instead of attempting an invalid request.
